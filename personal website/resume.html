@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brandon Chau | Portfolio</title>
+    <title>Brandon Chau | Resume</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- Add your custom CSS file here for styling -->
     <link
@@ -27,6 +27,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+            <a class="nav-link" href="resume.html"></a>
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -56,21 +57,13 @@
 
     <main>
       <div class="container">
-        <h2>Banking System</h2>
-        <a
-          href="https://github.com/BurandonC/cs401-banking-system"
-          target="_blank"
-          ><img src="images/bank.png"
-        /></a>
-        <p>
-          This project involves the use of multithreaded servers in Java to
-          handle packets from clients (including bank tellers, ATMs, and
-          customers) and includes a GUI. It has basic banking features like
-          depositing and withdrawing money, self-serve and bank teller options,
-          and uses a HashMap to store Customer objects. In a team of 5, my roles
-          included creating diagrams, flowcharts, and the GUI, implementing
-          button functions, and assisting with the server development.
-        </p>
+        <img src="resumepic.png" />
+      </div>
+
+      <div class="center">
+        <button id="downloadButton" class="btn btn-primary">
+          Download Resume
+        </button>
       </div>
     </main>
 
@@ -78,5 +71,23 @@
       <!-- Footer section -->
       <p></p>
     </footer>
+    <script>
+      document
+        .getElementById("downloadButton")
+        .addEventListener("click", function () {
+          // Set the file path to your resume file within your project directory
+          var resumePath =
+            "https://docs.google.com/document/d/1kcZKobGpqertTAPuWguPMwFOeO72xIEQX7AfPBTpWlE/edit?usp=sharing";
+
+          // Create an anchor element to initiate the download
+          var downloadLink = document.createElement("a");
+          downloadLink.href = resumePath;
+          downloadLink.download = "resume.pdf"; // Set the default filename for the downloaded file
+          downloadLink.target = "_blank"; // Open the download in a new tab
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          document.body.removeChild(downloadLink);
+        });
+    </script>
   </body>
 </html>

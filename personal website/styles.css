@@ -14,7 +14,6 @@ nav{
 }
 .profile_picture{
     display:flex;
-    border: 1px solid black;
     justify-content: center;
 }
 
@@ -38,4 +37,11 @@ nav{
     height: 100px;
     float: center;
     margin: 0 auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
 }
