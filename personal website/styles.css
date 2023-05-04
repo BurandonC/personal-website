@@ -1,0 +1,47 @@
+nav{
+    background-color: #292836;
+    color: white;
+}
+#about{
+    text-align: center;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    float: center;
+    margin: 0 auto;
+}
+.profile_picture{
+    display:flex;
+    justify-content: center;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    max-width: 500px;
+    align-items: center;
+}
+
+.circle-icons{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    float: center;
+    margin: 0 auto;
+}
+
+.icons{
+    width: 200px;
+    height: 100px;
+    float: center;
+    margin: 0 auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
