@@ -149,31 +149,14 @@
         </ul>
       </div>
       <div class="center">
-        <button id="downloadButton" class="btn btn-primary">
-          Download Resume
-        </button>
-      </div>
+      <a href="/Brandon_Chau_Resume.pdf" class="btn btn-primary" target="_blank">
+        Download Resume
+      </a>
+    </div>
     </main>
 
     <footer>
       <!-- Footer section -->
-      <script>
-        document
-          .getElementById("downloadButton")
-          .addEventListener("click", function () {
-            // Set the file path to your resume file within your project directory
-            var resumePath ="/Brandon_Chau_Resume.pdf";
-  
-            // Create an anchor element to initiate the download
-            var downloadLink = document.createElement("a");
-            downloadLink.href = resumePath;
-            downloadLink.download = "resume.pdf"; // Set the default filename for the downloaded file
-            downloadLink.target = "_blank"; // Open the download in a new tab
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            document.body.removeChild(downloadLink);
-          });
-      </script>
       <p></p>
     </footer>
   </body>
